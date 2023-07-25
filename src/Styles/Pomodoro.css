@@ -1,0 +1,49 @@
+  .ContainerPomodoro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hidden{
+    display: none;
+  }
+  .Pomodoro{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    row-gap: 15px;
+
+    background-color:white;
+    padding: 20px 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .Pomodoro h2{
+    font-size: 20px;
+    text-align: center;
+  }
+  .Pomodoro .Timer{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .Buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  }
+  .Buttons button{
+    background: coral;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: #000;
+  }
+  .working .Buttons button{
+    color: white;
+    background-color: crimson;
+  }
+  .Details{
+    font-size: medium;
+    text-align: center;
+  }
