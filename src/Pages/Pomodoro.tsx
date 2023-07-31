@@ -5,7 +5,7 @@ import { PomodoroTimer } from "../Assets/pomodoro-timer";
 export default function Pomodoro(): JSX.Element{
     return(
     <div className="ContainerPomodoro">
-        <PomodoroTimer 
+        <PomodoroTimer ////////////////////////////////////////////////////////////////////////////
         pomodoroTime = {1500} 
         shortRestTime={300} 
         longRestTime={900}

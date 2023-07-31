@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #41e1ba;
+    background-color: rgb(73, 141, 148);
 }
 .NavBar, .Outlet, .Footer{
     display: flex;
@@ -19,7 +19,7 @@
 }
 .NavBar{
     height: 10%;
-    background-color: blanchedalmond;
+    /*background-color: blanchedalmond;*/
 }
 .Outlet{
     height: 80%;
