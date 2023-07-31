@@ -7,6 +7,7 @@
     margin-top: 5%;
     justify-content: center;
     align-items: center;
+    font-family: 'VT323', monospace;
 }
 .Box-Menu{
     display: grid;
@@ -17,7 +18,7 @@
     color: #c0c0c0;
     text-decoration: none;
     cursor: pointer;
-    font-size: 25px;
+    font-size: x-large;
     font-weight: 500;
 }
 .Box-Menu .link:hover{
@@ -61,7 +62,7 @@
         gap: 10px;
     }
     .Box-Menu .link{
-        font-size: 20px;
+        font-size: x-large;
     }
     .Logo{
         margin: auto;

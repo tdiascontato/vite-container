@@ -13,11 +13,11 @@ export default function NavBar() {
   return (
     <div className='NavBarContainer'>
       <ul className="Box-Menu">
-          <li><Link to ='/' className='link Home'>Home</Link></li>
-          <li><Link to ='https://tdiascontato.vercel.app/repository' className='link'>Change Repository</Link></li>
+          <li><Link to ='https://tdiascontato.vercel.app/' className='link Home'>Home</Link></li>
+          <li><Link to ='https://tdiascontato.vercel.app/repository' className='link'>Repository</Link></li>
       </ul>
                           
-      <Link to="/"><img src={Logo}  alt= 'Logo' className='Logo' /></Link>
+      <Link to="https://tdiascontato.vercel.app/"><img src={Logo}  alt= 'Logo' className='Logo' /></Link>
                 
       <div className="RightSide">
 
@@ -30,7 +30,7 @@ export default function NavBar() {
               <img src={linkedin} alt = 'Meu Linkedin' /></Link></li>
             <li><Link to = "http://www.facebook.com/aulascomtiago" target="_blank">
               <img src={facebook} alt = 'Meu Facebook' /></Link></li>
-        </ul>        
+        </ul>         
                   
         <ul className="BoxCheats">
             <li><img src={languages} alt = 'pt-br'/></li>

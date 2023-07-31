@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import { Search } from '../Assets/search';
 import { UserProps } from '../Types/User';
@@ -49,7 +48,6 @@ export default function Github(): JSX.Element{
                 </div>
             </div>
             }
-            <Link to= '/'><button>H O M E</button></Link>
         </div>
     ) 
 }

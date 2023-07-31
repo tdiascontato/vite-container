@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 .ContainerApp{
     width: 100vw;
@@ -19,7 +20,6 @@
 }
 .NavBar{
     height: 10%;
-    /*background-color: blanchedalmond;*/
 }
 .Outlet{
     height: 80%;
