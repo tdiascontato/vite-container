@@ -14,8 +14,7 @@ export default function NavBar() {
     <div className='NavBarContainer'>
       <ul className="Box-Menu">
           <li><Link to ='/' className='link Home'>Home</Link></li>
-          <li><Link to ='https://tdiascontato.vercel.app/about' className='link'>About</Link></li>
-          <li><Link to ='/repository' className='link'>Works</Link></li>
+          <li><Link to ='https://tdiascontato.vercel.app/repository' className='link'>Change Repository</Link></li>
       </ul>
                           
       <Link to="/"><img src={Logo}  alt= 'Logo' className='Logo' /></Link>
