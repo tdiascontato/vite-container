@@ -1,10 +1,7 @@
-h2,p{
-    margin: 0;
-    padding: 0;
-}
 .Github{
     width: 100%;
-    font-family: 'Inter', sans-serif;
+    font-family: 'VT323', monospace;
+
 }
 .LogoGitHub img{
     width: 50px;
@@ -32,8 +29,10 @@ h2,p{
     text-align: center;
     border-radius: 20px;
     border: none;
+    height: 50px;
     font-size: 20px;
     font-weight: 600;
+    
 &:hover{
     color:white;
     background-color: black;
@@ -44,7 +43,9 @@ h2,p{
     border-radius: 20px;
     border: none;
     background-color: none;
+    height: 50px;
     cursor: pointer;
+    margin: 0 auto;
 }
 .User{
     display: flex;
