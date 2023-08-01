@@ -2,12 +2,12 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    
-    
+}
+::-webkit-scrollbar{
+    display: none;
 }
 .ContainerApp{
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,12 +23,11 @@
     height: 10%;
 }
 .Outlet{
-    height: 70%;
+    min-height: 100vh;
 }
 .Footer{
-    height: 30%;
+    
     background: black;
-    overflow: hidden;
 
 }
 @media(max-width: 700px){
