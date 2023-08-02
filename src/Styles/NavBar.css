@@ -28,8 +28,7 @@
 .Logo{
     display: flex;
     margin: 0 auto;
-    width: 40px;
-    height: 40px;
+    width: 70px;
     cursor: pointer;
 }
 /*part two*/

@@ -17,12 +17,14 @@ export default function Home(){
         <Link to= '/pomodoro' style={linkStyle}>
           <h2>Use o método Pomodoro para estudar:</h2>
           <img src={Pomodoro} className='PomodoroImg'/>
+          <button>Abrir projeto!</button>
         </Link>
         </div>
         <div className="GithubSpace">
         <Link to= '/github' style={linkStyle}>
           <h2>Pesquisa de Devs pelo API do Github:</h2>
           <img src={Github} className='GithubImg'/>
+          <button>Abrir projeto!</button>
         </Link>
         </div>
 

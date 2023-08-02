@@ -10,9 +10,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     place-items: center;
-    margin: 5%;
-    gap:50px;
-    color: #c0c0c0;
+
 }
 h2{
     text-align: center;
@@ -26,8 +24,12 @@ h2{
 }
 img{
     display: flex;
-    margin: 2% auto;
-    
+    margin: 2% auto;   
+}
+button{
+    margin: 500px;
+    display: block;
+    margin: 0 auto;
 }
 .PomodoroImg{
     width: 200px;
