@@ -1,7 +1,25 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;        
+}
+#light{
+    background-color: #e9c790;
+    color: black;
+    transition: 1s ease;
+}
+#light #Description{
+    color: white; 
+    transition: 1s ease;
+}
+#dark{ 
+    background-color: #1d1721;
+    color: white;
+    transition: 1s ease;
+}
+#dark #Description{
+    color: #e0705d; 
+    transition: 1s ease;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -11,10 +29,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(73, 141, 148);
 }
 .NavBar, .Outlet, .Footer{
-    
     width: 100%;
 }
 .NavBar{
@@ -22,6 +38,7 @@
 }
 .Outlet{
     min-height: 100vh;
+    margin: 100px auto;
 }
 .Footer{
     background: black;

@@ -1,4 +1,5 @@
 import { useEffect, useState} from "react";
+import { useTranslation } from 'react-i18next';
 import { useInterval } from "../Hooks/use-interval";
 import Button from "./button";
 import { Timer } from "./timer";
@@ -13,6 +14,7 @@ interface Props{
 
 export function PomodoroTimer(props: Props): JSX.Element{
     
+    const {t} = useTranslation("global");
     const [mainTime, setMaintime] = useState(props.pomodoroTime);
     const [timeCount, setTimeCount] = useState(false);
     const [working, setWorking] = useState(false);
@@ -72,23 +74,23 @@ export function PomodoroTimer(props: Props): JSX.Element{
     return(
         
         <div className= 'Pomodoro'>
-            <h2>Estamos {working ? 'trabalhando...' : 'descansando'}</h2>
+            <h2>{working ? t("Pomo.Working") : t("Pomo.Slepping")}</h2>
 
             <Timer mainTime={mainTime}/>
             
-            <div className="Buttons">
-            <Button text='COMEÇAR!' onClick={()=> configWork()}></Button>
-            <Button text='DESCANSAR!' onClick={()=> configRest(false)}></Button>
+            <div className="Buttons"> 
+            <Button text={t("Pomo.Start")} onClick={()=> configWork()}></Button>
+            <Button text={t("Pomo.Rest")} onClick={()=> configRest(false)}></Button>
             <Button 
             className={!working && !resting ? 'hidden' : ''}
-            text={timeCount ? 'PAUSAR!' : 'PLAY!'} 
+            text={timeCount ? t("Pomo.Pause") : 'PLAY!'} 
             onClick={()=> setTimeCount(!timeCount)}></Button>
             </div>
 
             <div className="Details">
-                <p>Ciclos concluidos: {completedCycles}</p> 
-                <p>Tempo trabalhado: {secondsToTime(fullWorkingtime)}</p> 
-                <p>Pomodoros concluídos: {numberOfPomodoros}</p> 
+                <p>{t("Pomo.DescriptOne")} {completedCycles}</p> 
+                <p>{t("Pomo.DescriptTwo")} {secondsToTime(fullWorkingtime)}</p> 
+                <p>{t("Pomo.DescriptThree")} {numberOfPomodoros}</p> 
             </div>
 
         </div>

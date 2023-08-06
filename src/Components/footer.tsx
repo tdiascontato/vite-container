@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {Link} from 'react-router-dom';
 import '../Styles/Footer.css';
 
@@ -8,12 +9,12 @@ import linkedin from '../Img/linkedin.png';
 import facebook from '../Img/facebook.png';
 
 export default function Footer(){
-
-  const [copy, setCopy] = useState('tdiascontato@gmail.com');
+    const {t} = useTranslation("global");
+    const [copy, setCopy] = useState('tdiascontato@gmail.com');
     
-  const handleClick = ()=>{       
+    const handleClick = ()=>{       
           navigator.clipboard.writeText('tdiascontato@gmail.com');
-          setCopy(`Você me copiou!`);
+          setCopy(`${t("Footer.Copy")}`);
           setTimeout(()=>{
               setCopy('tdiascontato@gmail.com')
           }, 2000)           
@@ -38,7 +39,7 @@ export default function Footer(){
                 </ul> 
  
                 <div className='CopyAndTap'>
-                    <label  id="label" htmlFor="contact">Aperte e me Copie!</label>
+                    <label  id="label" htmlFor="contact">{t("Footer.Title")}</label>
                     <button  onClick={handleClick} id="contact">{copy}</button>
                 </div>
 

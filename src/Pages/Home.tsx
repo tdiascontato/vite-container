@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+
 import '../Styles/Home.css';
-//import Logo from '../Img/logo.png';
 import Github from '../Img/githubProject.png';
 import Pomodoro from '../Img/pomodoroProject.png';
 
 export default function Home(){
+  const {t} = useTranslation("global");
   const linkStyle = {
     textDecoration: 'none',
   };
@@ -15,16 +17,16 @@ export default function Home(){
 
         <div className="PomodoroSpace">
         <Link to= '/pomodoro' style={linkStyle}>
-          <h2>Use o método Pomodoro para estudar:</h2>
+          <h2 id='Description'>{t("Home.Pomodoro")}</h2>
           <img src={Pomodoro} className='PomodoroImg'/>
-          <button>Abrir projeto!</button>
+          <button>{t("Home.Button")}</button>
         </Link>
         </div>
         <div className="GithubSpace">
         <Link to= '/github' style={linkStyle}>
-          <h2>Pesquisa de Devs pelo API do Github:</h2>
+          <h2 id='Description'>{t("Home.Github")}</h2>
           <img src={Github} className='GithubImg'/>
-          <button>Abrir projeto!</button>
+          <button>{t("Home.Button")}</button>
         </Link>
         </div>
 

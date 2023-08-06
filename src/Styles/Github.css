@@ -1,7 +1,5 @@
 .Github{
     width: 100%;
-    font-family: 'VT323', monospace;
-
 }
 .LogoGitHub img{
     width: 50px;
@@ -14,8 +12,6 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    
-    color: white;
     gap:15px;
     margin:10px auto;
 }
@@ -32,7 +28,6 @@
     height: 50px;
     font-size: 20px;
     font-weight: 600;
-    
 &:hover{
     color:white;
     background-color: black;
@@ -41,15 +36,19 @@
 }
 .ButtonSearch{
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
     border: none;
     background-color: none;
     height: 50px;
     cursor: pointer;
-    margin: 0 auto;
 }
 .User{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     justify-content: center;
     text-align: center;
     font-size: 15px;

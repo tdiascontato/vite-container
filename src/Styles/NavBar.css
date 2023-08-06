@@ -8,15 +8,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;    
     max-width: 50%;
+    gap: 30px;
     list-style-type: none;
     place-items: center;
 }
 .Box-Menu .link{
-    color: #c0c0c0;
     text-decoration: none;
     cursor: pointer;
-    font-size: x-large;
-    font-weight: 500;
+    font-size: xx-large;
+
 }
 .Logo{
     display: flex;
