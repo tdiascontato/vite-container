@@ -1,0 +1,11 @@
+{
+    "NavBar": {
+        "Home": "Início",
+        "About": "Sobre",
+        "Works": "Trabalhos"
+    },
+    "Home": {
+        "Title": "Olá! Sou o Tiago, desenvolvedor de softwares.",
+        "Description": "Sou professor de matemática e estudo a 1.5 anos Node.js, Typescript, Nextjs e PHP!"
+    }
+}

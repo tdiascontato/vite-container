@@ -14,9 +14,7 @@
     background-color: rgb(73, 141, 148);
 }
 .NavBar, .Outlet, .Footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     width: 100%;
 }
 .NavBar{
@@ -26,9 +24,7 @@
     min-height: 100vh;
 }
 .Footer{
-    
     background: black;
-
 }
 @media(max-width: 700px){
  

@@ -1,0 +1,10 @@
+{
+    "NavBar": {
+        "Home": "Home",
+        "Works": "Works"
+    },
+    "Home": {
+        "Title": "Hello! I'm Tiago, software developer.",
+        "Description": "I'm a math teacher and I've been studying Javascript, Node.js, React and Typescript for 1.5 years!"
+    }
+}
