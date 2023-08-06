@@ -6,7 +6,11 @@ import Logo from '../Img/logo.png';
 import languages from '../Img/languages.png';
 import mode from '../Img/mode.png';
 
-export default function NavBar({modeLanguage}) {
+interface NavBarProps{
+  modeLanguage: () => void
+}
+
+export default function NavBar({modeLanguage}: NavBarProps){
   const {t} = useTranslation("global");
 
   return (

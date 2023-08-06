@@ -8,7 +8,7 @@ import Footer from './Components/footer';
 import NavBar from './Components/navbar';
 import './Styles/App.css';
 
-function App() {
+function App(): JSX.Element {
 
   const [language, setLanguage] = useState('pt');
   const toggleLanguage = () => {
